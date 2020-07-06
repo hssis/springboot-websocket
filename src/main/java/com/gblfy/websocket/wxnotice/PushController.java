@@ -41,7 +41,7 @@ public class PushController {
         try {
             wxMpService.getTemplateMsgService().sendTemplateMsg(templateMessage);
         } catch (Exception e) {
-            System.out.println("推送失败：" + e.getMessage());
+            System.out.println("推送失败!：" + e.getMessage());
             e.printStackTrace();
         }
 
